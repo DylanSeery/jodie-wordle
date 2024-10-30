@@ -1,0 +1,21 @@
+// tsconfig.json
+{
+  "compilerOptions": {
+    "target": "ESNext", // Use modern JavaScript version
+    "module": "ESNext", // Use ECMAScript module resolution
+    "moduleResolution": "Node",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "preserve", // Needed for Vue's JSX/TSX support
+    "lib": ["ESNext", "DOM"], // Provide necessary libraries
+    "types": ["vite/client"], // Type declarations for Vite
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}
